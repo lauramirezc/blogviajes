@@ -5,46 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explora naturaleza y serenidad</title>
     <link rel="stylesheet" href="estilo1.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            text-align: center;
+            background: url('/imagenesblog/sierrra/s1atardecerymontaña.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* Sección Introducción */
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sección Destinos */
+        .destinos {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .tarjeta h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .tarjeta p {
+            padding: 0 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .boton {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
+
+        /* Galería */
+        .galeria {
+            padding: 20px;
+        }
+
+        .imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .imagenes img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-content">
-            <img src="/imagenesblog/sierrra/s1atardecerymontaña.jpg" alt="Logotipo del Blog" class="logo">
-            <h1>Blog de Viajes por Santa Marta</h1>
-        </div>
+        <h1>Explora naturaleza y serenidad</h1>
     </header>
 
     <!-- Body -->
     <main>
-        <!-- Sección 2: Introducción -->
+        <!-- Sección Introducción -->
         <section class="intro">
             <p>Explora la belleza de Santa Marta y sus alrededores. Descubre destinos mágicos y vive experiencias inolvidables.</p>
             <button class="subscribe-btn">Suscríbete</button>
         </section>
 
-        <!-- Sección 3: Tarjetas -->
+        <!-- Sección Destinos -->
         <section class="destinos">
             <h2>Destinos Principales</h2>
             <div class="tarjetas">
+                <!-- Tarjeta 1 -->
                 <div class="tarjeta">
                     <img src="tayrona.jpg" alt="Tayrona">
                     <h3>Tayrona</h3>
                     <p>Un paraíso natural con playas exóticas y senderos llenos de biodiversidad.</p>
                     <a href="tayrona.html" class="boton">Ver más</a>
                 </div>
+                <!-- Tarjeta 2 -->
                 <div class="tarjeta">
                     <img src="mendihuaca.jpg" alt="Mendihuaca">
                     <h3>Mendihuaca</h3>
                     <p>Un lugar para relajarse junto al río y disfrutar de la tranquilidad del mar.</p>
                     <a href="mendihuaca.html" class="boton">Ver más</a>
                 </div>
+                <!-- Tarjeta 3 -->
                 <div class="tarjeta">
                     <img src="minca.jpg" alt="Minca">
                     <h3>Minca</h3>
                     <p>Montañas, cascadas y un clima fresco que encantará a los aventureros.</p>
                     <a href="minca.html" class="boton">Ver más</a>
                 </div>
+                <!-- Tarjeta 4 -->
                 <div class="tarjeta">
                     <img src="centro-historico.jpg" alt="Centro Histórico">
                     <h3>Centro Histórico</h3>
@@ -54,7 +198,7 @@
             </div>
         </section>
 
-        <!-- Sección 4: Galería -->
+        <!-- Sección Galería -->
         <section class="galeria">
             <h2>Galería</h2>
             <div class="imagenes">
@@ -62,20 +206,16 @@
                 <img src="galeria2.jpg" alt="Imagen 2">
                 <img src="galeria3.jpg" alt="Imagen 3">
                 <img src="galeria4.jpg" alt="Imagen 4">
-                <img src="galeria5.jpg" alt="Imagen 5">
-                <img src="galeria6.jpg" alt="Imagen 6">
-                <!-- Más imágenes -->
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Redes Sociales</a>
-            <a href="sobre-nosotros.html">Sobre Nosotras</a>
-            <p>&copy; 2024 Blog de Viajes por Santa Marta. Todos los derechos reservados.</p>
-        </div>
+        <a href="#">Redes Sociales</a>
+        <a href="sobre-nosotros.html">Sobre Nosotras</a>
+        <p>&copy; 2024 Blog de Viajes por Santa Marta. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
