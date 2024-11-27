@@ -3,104 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotras</title>
+    <title>Sobre Nosotras - Blog de Viajes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         header {
-            background: url('cover.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header img {
-            max-width: 100px;
-        }
-        header h1 {
-            margin: 20px 0;
-            font-size: 3em;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .content p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        .content img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            margin: 20px 0;
-        }
-        footer {
-            background-color: #333;
+            background-color: #f4a261;
             color: white;
             text-align: center;
             padding: 20px 10px;
         }
-        footer .social-buttons a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 10px 15px;
-            color: white;
-            text-decoration: none;
-            border: 1px solid white;
-            border-radius: 5px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        footer .social-buttons a:hover {
-            background-color: white;
-            color: #333;
+        .intro {
+            background-color: #ffe8c1;
+            text-align: center;
+            padding: 20px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .intro button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #f4a261;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .intro button:hover {
+            background-color: #e76f51;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content h2, .content h3 {
+            margin-top: 0;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        footer {
+            background-color: #ffe8c1;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
         footer p {
-            margin-top: 10px;
+            margin: 0;
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- Header -->
     <header>
-        <img src="logo.png" alt="Logotipo del Blog">
-        <h1>Mi Blog Personal</h1>
+        <h1>Sobre Nosotras</h1>
     </header>
+
+    <!-- Introducción -->
+    <div class="intro">
+        <p>Bienvenidas a nuestro blog de viajes. Descubre nuestras historias, aventuras y consejos para explorar el mundo.</p>
+        <button>Suscríbete</button>
+    </div>
 
     <!-- Contenido principal -->
     <div class="content">
-        <h2>Sobre Nosotras</h2>
-        <p>
-            Este es un espacio dedicado a la biografía de las autoras. Aquí puedes compartir quiénes son, 
-            su trayectoria, intereses y cualquier detalle que quieras destacar sobre ellas.
-        </p>
-        <img src="biografia.jpg" alt="Imagen representativa de las autoras">
-        
-        <h2>Misión del Blog</h2>
-        <p>
-            La misión de este blog es compartir contenido inspirador, educativo o simplemente entretenido 
-            con nuestros lectores. Es un espacio creado con pasión para conectar con personas que comparten 
-            intereses similares.
-        </p>
-        
-        <img src="equipo.jpg" alt="Imagen del equipo o de las autoras">
+        <div>
+            <h2>Título</h2>
+            <h3>Subtítulo</h3>
+            <p>Párrafo 1: Aquí va el contenido introductorio sobre las autoras del blog.</p>
+            <p>Párrafo 2: Más detalles sobre las experiencias y motivaciones detrás del blog.</p>
+        </div>
+        <div>
+            <img src="imagen-grande.jpg" alt="Imagen destacada de las autoras">
+        </div>
+        <div>
+            <h3>Subtítulo 2</h3>
+            <p>Párrafo 1: Breve descripción de la misión del blog.</p>
+            <p>Párrafo 2: Objetivos y metas para compartir con los lectores.</p>
+        </div>
+        <div>
+            <img src="imagen2-grande.jpg" alt="Imagen del equipo o autoras">
+        </div>
+        <div class="full-width">
+            <p>Párrafo 3: Reflexiones finales y un mensaje especial para los visitantes del blog.</p>
+        </div>
     </div>
 
-    <!-- Pie de página -->
+    <!-- Footer -->
     <footer>
-        <div class="social-buttons">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
-        <a href="/nosotras.html" style="color: white; display: block; margin-top: 10px;">Sobre Nosotras</a>
-        <p>© 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+        <p>© 2024 Blog de Viajes. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
