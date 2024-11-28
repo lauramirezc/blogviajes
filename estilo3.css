@@ -1,0 +1,46 @@
+/* Tipografías */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #fefaf6;
+}
+        /* Header */
+        .header {
+            position: relative;
+            text-align: center;
+            background: url('/imagenesblog/sierrra/s1atardecerymontaña.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .intro {
+            padding: 20px;
+            text-align: center;
+            background-color: #97ceb9;
+            color: #fff;
+        }
+        .subscribe-btn {
+            background-color: #5191bd;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
