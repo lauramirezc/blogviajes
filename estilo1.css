@@ -226,36 +226,40 @@ li {
     box-sizing: border-box; /* Incluir padding en el tamaño total */
 }
 
-/* Content */
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre elementos */
     padding: 20px;
-    background: #fff; /* Fondo blanco para destacar */
+    background: #fff; /* Fondo blanco */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    justify-items: center; /* Centra horizontalmente el contenido de cada celda */
+    align-items: center; /* Centra verticalmente el contenido de cada celda */
 }
 
 .content img {
-    width: 50%; /* Imágenes ocupan todo el ancho */
+    width: 100%; /* Imagen ocupa el ancho de su celda */
     height: auto; /* Mantén proporciones */
+    max-width: 300px; /* Límite del ancho de la imagen */
     border-radius: 10px; /* Bordes redondeados */
 }
 
 .content h2, .content h3 {
-    margin-top: 0;
-    text-align:left; /* Títulos alineados al centro */
+    margin: 10px 0; /* Espaciado entre líneas */
+    text-align: center; /* Títulos centrados */
 }
 
 .content p {
-    margin: 10px 0;
-    text-align: center; /* Párrafos alineados al centro */
+    margin: 10px 0; /* Espaciado entre párrafos */
+    text-align: justify; /* Justifica el texto */
 }
 
 .full-width {
     grid-column: span 2; /* Elemento ocupa ambas columnas */
+    text-align: justify; /* Justifica texto en celdas de ancho completo */
 }
+
 
 /* Footer */
 .footer {
